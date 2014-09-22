@@ -1,0 +1,36 @@
+# Erlang
+*.beam
+*.swf
+*.dump
+
+# Java
+*.jar
+*.class
+
+# VoltDB
+debugoutput/
+
+# Logs
+*.out
+*.log
+# (Erlang rotating logs:)
+*.log.1
+*.log.2
+*.log.3
+*.log.4
+*.log.5
+# VIM 
+*~
+*.sw?
+
+# Mac
+.DS_Store
+
+# Nginx
+*.pid
+
+
+#myown frmwork
+v
+
+
