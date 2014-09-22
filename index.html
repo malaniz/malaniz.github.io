@@ -1,1 +1,125 @@
-@malaniz is building the web page<br> Please, be patient<br><br>Best
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="google-site-verification" content="loJRWB-BkAzjbo86ZfRTZl00zbsipTHt-_n_6Rl2Yx8" />
+	<title>Malaniz Home Page</title>
+  <link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
+  <style>
+    body {
+    }
+    .container { 
+      margin: 0;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      color: #224;
+      padding-top: 50px; 
+      width: 500px; 
+      font-family: 'Electrolize', sans-serif;
+    }
+    h1 {
+      color: #aaa;
+      
+    }
+    h1 span {
+      color: #333;
+      
+    }
+ 
+    h4, h1 {
+      padding: 0px;
+      margin: 0px;
+    }
+    #avatar img {
+      border: 1px solid #ccc;
+      height: 160px;
+    }
+    #abstract {
+      text-align: left;
+      padding-left: 152px;
+    }
+    #contact {
+      padding-top: 30px;
+      text-align: right;
+    }
+    #contact p{
+      margin: 0px;
+    }
+    #contact span {
+      width: 60px;
+      display: inline-block;
+      color: #55c;
+
+    }
+    #contact a {
+      text-decoration: none;
+      color: #888;
+    }
+
+
+  </style>
+</head>
+<body>
+  <center>
+    <div class="container"> 
+      <h1> Marcelo <span>Alaniz</span></h1>
+      <h4> aka inGNUcious, mAlaniz </h3>
+      <h3> Personal WebPage</h3>
+      <div id="avatar">
+        <img src="img/yo.png"> 
+      </div> 
+      <div id=abstract>
+        PhD Student focus on HPC <br>
+        Computer Science Degree <br>
+        Game Designer <br>
+        Ethical Hacker <br>
+        Javascript Developer <br>
+        Python Developer <br> 
+      </div> 
+      <div id=contact>
+        <p><a href="mailto:malaniz@code4life.com.ar">malaniz [at] code4life dot com dot ar </a> [ <span>Email</span> ]</p>
+        <p><a href="http://twitter.com/ingnucious"> @ingnucious </a> [ <span>Twitter</span> ]</p>
+        <p><a href="http://www.linkedin.com/in/alanizmarcelo"> AlanizMarcelo </a> [ <span>LinkedIn</span> ]</p>
+      </div> 
+    </div>
+  </center>
+
+  <script>
+    (function() {
+
+      var links, i, l;
+      links = document.getElementsByTagName('a');
+      for (i=0; i<links.length; i++) {
+        l = links[i];
+        l.addEventListener('click', function(e){
+          window.open(this.href);
+          e.preventDefault();
+        }, false);
+        
+      }
+    }).call(this);
+
+    /* google analytics */
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34937522-1']);
+    _gaq.push(['_setDomainName', 'malaniz.com.ar']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+<script type="text/javascript">
+
+</script>
