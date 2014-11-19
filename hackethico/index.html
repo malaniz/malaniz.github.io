@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Hacking</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="codemirror/lib/codemirror.css">
+		<link rel="stylesheet" href="codemirror/theme/eclipse.css">
+    <link rel="stylesheet" href="css/style.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+    <script type="text/ng-template" charset="utf-8" id="liveExample.html">
+      <div class="playground"></div>
+      <textarea class="source"></textarea>
+      <button class="reload" ng-click="run()">Run</button>
+      <select ng-model="snippet" ng-options="s.code as s.title for s in snippets" ng-change="loadSnippet(snippet)">
+    </script>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Hacking Ethico</h1>
+					<h2>For fun and Profit!?</h2>
+          <br>
+          <br>
+					<p>
+
+
+          <small><a href="http://http://malaniz.github.io/"> Marcelo Alaniz</a> / <a href="http://twitter.com/ingnucious">@ingnucious</a></small>
+					</p>
+          <p style="margin: 0 45%;" class="circular"> </p>
+				</section>
+
+        <section>
+          <h1> Whoami </h1>
+          <h2> Marcelo Alaniz </h2>
+          <img style="width: 20%" src="img/avatar.jpg" >
+          
+          <p> Hacker?</p>
+          <p> Profesor </p>
+          <p> Arquitecto de Software </p>
+          <p> Desarrollador </p>
+
+        </section>
+        <section>
+          <h1>Fun?</h1>
+        </section>
+        <section>
+          <h1> Profit </h1>
+        </section>
+
+        <section>
+          <section>
+            <h1> Hackers </h1>
+          </section>
+
+          <section>
+            <h3> hacker 1: </h3>
+            <p>Apasionados por la seguridad informática.</p>
+            <p>Entradas remotas no autorizadas por medio de ....</p>
+            <p>Gente que depura y arreglan errores de sistemas</p>
+          </section>
+
+          <section>
+            <h3> hacker 2: </h3>
+            <p>Aquellos que son apasionados por saber que pasa dentro de sus
+            computadoras. Ya sean programas cerrados o no. Tambien aplicado a las
+            telecomunicaciones </p> 
+          </section>
+
+          <section>
+            <h3> hacker 3: </h3>
+            <p>
+            Una comunicad de entusiastas programadores y diseñadores de
+            sistemas originada en los sesenta alrededor del MIT. Esta comunidad
+            se caracteriza por el lanzamiento del movimiento del software libre.
+            </p> 
+          </section>
+
+          <section>
+            <h1> ... </h1>
+          </section>
+
+          <section>
+            <h3> hacker n: </h3>
+            <p>
+            No sabemos bien que es o no es un hacker.
+            </p> 
+          </section>
+
+          <section>
+            <h3> Hacker (RAE): </h3>
+            <p>
+            hacker ==  pirata informático.
+            </p> 
+          </section>
+          <section>
+            <img src="img/seriously.jpg" />
+          </section>
+
+          <section>
+            <h3> "El diablo quiere hacernos creer que no existe" </h3>
+            <p> by NSA? </p>
+          </section>
+
+          <section>
+            <h3> Los hackers existen! </h3>
+            <p> Para bien o para mal </p>
+          </section>
+
+        </section>
+
+
+
+        <section>
+          <section>
+            <h1>¿Que es ético?</h1>
+            <h2>Informatica && bugs </h2>
+          </section>
+
+          <section>
+            <h1>Cumplir la Ley?</h1>
+          </section>
+
+          <section>
+            <h1>Encontrar una vulnerabilidad </h1>
+            <h2> y no explotarla? </h2>
+            <h3> Avisar!! </h3>
+          </section>
+
+          <section>
+            <h2>Encontrar una vulnerabilidad </h2>
+            <h3> explotarla </h3>
+            <p> El responsable aprende de la mala experiencia </p>
+          </section>
+        </section>
+
+
+        <section>
+          <section>
+            <h1> Porque </h1><h2>es importante </h2>
+            <h3>saber que es y que hace un hacker. </h3>
+          </section>
+          <section>
+            <h1> Seguridad </h1>
+          </section>
+          <section>
+            <img src="img/what.jpe">
+          </section>
+          <section>
+            <h1> Posturas </h1>
+            <h2> para atacar la </h2>
+            <h3>inseguridad informatica </h3>
+          </section>
+          <section>
+            <h3> 
+              Tratar de adivinar que hace un hacker, <br> 
+              de acuerdo a esta hipótesis proteger <br> la información (y su transmisión)
+            </h3> 
+          </section>
+          <section>
+            <h3> 
+              Saber que hace un hacker, <br> para luego usarlo en su contra.
+              <br> O en todo caso, saber protegerse.  </h3> 
+          </section>
+           <section>
+             <h1> Historia </h1>
+             <ul>
+               <li> Desde la lucha por territorios </li>
+               <li> Turing (máquina enigma) </li>
+               <li> Kevin Mitnick </li>
+               <li> Master of Deceptions </li>
+               <li> Anonymous ? </li>
+             </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Ethical Hacker</h1>
+          </section>
+          <section>
+            <h1>¿Que hace?</h1>
+            <ul>
+              <li> Audita sistemas </li>
+              <li> Audita redes </li>
+              <li> Audita empresas </li>
+              <li> Audita personas </li>
+            </ul>
+          </section>
+
+          <section>
+            <h1>¿Como lo hace?</h1>
+            <ul>
+              <li> Ataca </li>
+              <li> Vulnera </li>
+              <li> Informa </li>
+            </ul>
+          </section>
+          <section>
+            <h1>Tester</h1>
+            <h2>con anfetaminas</h2>
+          </section>
+          <section>
+            <h1>EH</h1>
+            <ul>
+              <li> Técnicas de hacking </li>
+              <li> Está inmerso en el "underground" </li>
+              <li> Ética? contrato ...  </li>
+            </ul>
+          </section>
+          
+
+        </section>
+
+
+        <section>
+          <section>
+            <h1> Objetivos </h1>
+            <ul>
+              <li> Recursos en Redes </li>
+              <li> Sistemas operativos </li>
+              <li> Aplicaciones </li>
+              <li> Código Shrink-wrap - Software Empaquetado </li>
+              <li> Errores de configuración </li>
+          </section>
+          <section>
+            <h1> Terminología </h1>
+            <ul>
+              <li> Vulnerabilidad </li>
+              <li> Amenaza </li>
+              <li> Riesgo </li>
+              <li> Exposición </li>
+              <li> Contramedida </li>
+              <li> Exploit </li>
+              <li> Ataque </li>
+          </section>
+
+          <section>
+            <h1> Metodología </h1>
+            <ul>
+              <li> Reconocimiento </li>
+              <li> Escaneo </li>
+              <li> Acceso </li>
+              <li> Mantenimiento de acceso </li>
+              <li> Eliminación de rastros </li>
+            </ul>
+          </section>
+          <section>
+            <h1> Reconocimiento</h1>
+            <h3> Ataques de arista (indetectables)</h3>
+            <ul>
+              <li> Google Fu </li>
+              <li> Twitter </li>
+              <li> Linkedin </li>
+              <li> Facebook </li>
+              <li> Shodan </li>
+              <li> Crawlers mas especificos </li>
+            </ul>
+          </section>
+          <section>
+            <h1> Escaneo</h1>
+            <h3> Objetivo: maquinas obtenidas a partir del reconocimiento</h3>
+            <ul>
+              <li> Detectar bugs en maquinas objectivo </li>
+              <li> Servicios de red funcionales  </li>
+              <li> Sistema operativo </li>
+              <li> Riesgo: ataque a servidor directo (detectable) </li>
+            </ul>
+          </section>
+          <section>
+            <h1> Ataque o Acceso </h1>
+            <h3> Objetivo: Conseguir concretar el ataque al recurso establecido  </h3>
+            <p> El 90% de las veces significa encontrar el exploit que aprovecha una vulnerabilidad </p>
+          </section>
+ 
+          <section>
+            <h1>DOS &&  DDOS </h1>
+            <img src="img/DDOS.jpg">
+            <p> <a href="http://map.ipviking.com/"> IPViking </a> </p>
+          </section>
+
+          <section>
+            <h1>DDOS (Botnet)</h1>
+            <img src="img/botnet.jpg">
+          </section>
+
+          <section>
+            <h1>SQLi</h1>
+            <img src="img/bobby.gif">
+          </section>
+
+          <section>
+            <h1>Buffer Overflow</h1>
+            <img src="img/bobby.gif">
+          </section>
+
+          <section>
+            <h1> Metadatos </h1>
+            <img src="img/escote.jpg">
+            <p> <a href="http://www.fayerwayer.com/2012/04/fbi-consigue-atrapan-a-hacker-gracias-a-foto-del-escote-de-su-novia/"> Escote! </a> </p>
+          </section>
+
+          <section>
+            <h1> Ingenieria Social </h1>
+            <img src="img/kevin.jpg">
+            <ul>
+              <li>Todos queremos ayudar.</li>
+              <li> El primer movimiento es siempre de confianza hacia el otro. </li>
+              <li> No nos gusta decir No. </li>
+              <li> A todos nos gusta que nos alaben. </li>
+            </ul>
+          </section>
+
+
+          <section>
+            <h1> Ingenieria Social </h1>
+            <iframe class="wistia_embed" name="wistia_embed" src="http://fast.wistia.net/embed/iframe/ccefulfjpr" allowtransparency="true" frameborder="0" scrolling="no" width="480" height="298"></iframe>
+            <p><a href="http://www.social-engineer.org/"> Social Engineer dot ORG </a></p>
+          </section>
+
+
+          <section>
+            <h1> Pishing </h1>
+            <img src="img/set.jpg">
+          </section>
+
+          <section>
+            <h1> Mantener <br> accesos </h1>
+            <h2> (Backdoors) </h2>
+            <p>Una manera de acceder a una computadora o recurso a travez de metodos alternativos. Suele instalarse por virus o programas en concreto</p>
+          </section>
+
+          <section>
+            <h1> Cubrir huellas </h1>
+            <h2> (rootkits) </h2>
+            <p>Es un software que se instala para que no se muestren los procesos malignos instalados en la máquina o servidor</p>
+          </section>
+          <section>
+            <h1> Conclusiones </h1>
+            <p> Existen herramientas automatizadas para el 90% del proceso </p>
+            <p> Pero siempre se necesita de hackers improvisar </p>
+            <p> Lo nombrado es solo el 20% de los ataques </p>
+            <p> Los hackers de verdad aun no los conocemos </p>
+          </section>
+
+        </section>
+        <section>
+          <section>
+            <h1> Conceptos nuevos </h1>
+          </section>
+
+
+          <section> 
+            <h1> Bitcoin <br> Criptomonedas </h1>
+          </section>
+          <section>
+            <h1> DeepWeb </h1>
+            <ul>
+              <li>Level 1 – Web: Normal</li>
+              <li>Level 1 – Surface Web: Links especiales en Reddit</li>
+              <li>Level 2 – Bergie Web: Igual al surface pero no son sitios crawleables </li>
+              <li>Level 3 – Deep Web: usando TOR (sitios onion)</li>
+              <li>Level 4 – Charter Web: hardware especial o TOR con certificados especiales </li>
+              <li>Level 5 – Mariana's Web: Poco conocido.</li>
+            </ul>
+
+          </section>
+          <section>
+            <h1> Cyberguerra </h1>
+            <h3> en la guerra y el amor todo se vale </h3>
+          </section>
+          <section>
+            <h1> Sin ética </h1>
+            <p> Guerras tradicionales: Entre estados </p>
+            <p> Cyberguerra: estados vs hacktivistas </p>
+            <p> Cyberguerra: hacktivistas vs empresas </p>
+          </section>
+          <section>
+            <h1> Curiosidades </h1>
+            <p> Algoritmos de encriptación en USA estan regulados por la ITAR </p>
+            <p> ITAR: Reguladora de tráfico de Armas. </p>
+          </section>
+          <section>
+            <h1> Curiosidades </h1>
+            <p> Algoritmos de encriptación en USA estan regulados por la ITAR </p>
+            <p> ITAR: Reguladora de tráfico de Armas. </p>
+            <p> PGP y 3Des fueron considerados en la escala de armas de igual prioridad que la bomba de nitrogeno </p>
+          </section>
+          
+          <section>
+            <h1> Curiosidades </h1>
+            <p> EEUU, China y Rusia son los estados que declaran una inversión MultiBillonaria en equipos de hacking (no de seguridad informatica), los demas paises no se animan a declarar incluso algunos a crearlos. </p>
+            <p> EEUU, China y Rusia, han realizados demostraciones de poder (sin daños colaterales)</p>
+          </section>
+        </section>
+
+        <section> 
+          <h1> Conclusiones </h1>
+        </section>
+
+        <section> 
+          <h1> Preguntas? </h1>
+          <h3> Gracias </h3>
+        </secion>
+
+
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+		<script src="js/jquery-1.9.1.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          // { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          // { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'codemirror/lib/codemirror.js'},
+          { src: 'codemirror/mode/javascript/javascript.js'},
+          { src: 'codemirror/mode/css/css.js'},
+          { src: 'codemirror/mode/xml/xml.js'},
+          { src: 'codemirror/mode/htmlmixed/htmlmixed.js'},
+          { src: 'js/angular.min.js'},
+          { src: 'js/live_example.js', callback: function(){ angular.bootstrap(document, ['angularReveal']); } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
