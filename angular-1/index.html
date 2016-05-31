@@ -38,24 +38,24 @@
       <select ng-model="snippet" ng-options="s.code as s.title for s in snippets" ng-change="loadSnippet(snippet)">
     </script>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
 
-				<section>
-					<h1>AngularJS</h1>
-					<h2>ng-power!</h2>
+        <section>
+          <h1>AngularJS</h1>
+          <h2>ng-power!</h2>
           <br>
-					<h3>Javascript Frontend Framework</h3>
+          <h3>Javascript Frontend Framework</h3>
           <br>
-					<p>
+          <p>
 
 
           <small><a href="http://http://malaniz.github.io/"> Marcelo Alaniz</a> / <a href="http://twitter.com/ingnucious">@ingnucious</a></small>
-					</p>
+          </p>
           <p style="margin: 0 45%;" class="circular"> </p>
-				</section>
+        </section>
 
         <section>
           <h1> Whoami </h1>
@@ -66,7 +66,6 @@
           <p> Arquitecto de Software </p>
           <p> Desarrollador </p>
           <br>
-          <p><small> y si me defino como hace RRHH (head hunters): <br>seria algo asi como un <br>Developer sayayin nivel 3 con esteroides <br>(esos tipos siempre la exageran)</small> </p>
 
         </section>
 				<section>
@@ -89,11 +88,28 @@
           <h1>Parecido </h1>
           <h2>pero no tanto ... </h2>
           <ul>
+            <li>React</li>
             <li>Backbone</li>
             <li>Emberjs</li>
             <li>Knockoutjs</li>
             <li>...</li>
             <li>Y otro monton que estan por ahi...</li>
+          </ul>
+        </section>
+
+
+        <section>
+          <h1>SPA</h1>
+          <p>Single page application</p>
+        </section>
+
+        <section>
+          <h1>SPA</h1>
+          <ul>
+            <li>Thick client</li>
+            <li>Angular no usa plugins</li>
+            <li>Ajax</li>
+            <li>WebSockets</li>
           </ul>
         </section>
 
@@ -109,76 +125,6 @@
           <p>jQuery, YUI, Bootstrap, etc ...</p>
           <p>Lo logico es usar una combinación</p>
         </section>
-
-
-				<section>
-					<h2>¿Que tan poderoso es?</h2>
-          <live-example>
-            <script type="text/template" data-title="Normal">
-            <form name="form">
-              <p>
-                <input type="text" ng-model="name"/>
-              </p>
-              <p>
-                {{name}}
-              </p>
-            </form>
-            </script>
-            <script type="text/template" data-title="Reverse">
-              <code>
-                function Foo($scope){
-                  $scope.rev = function(s) {
-                    if (s) {
-                      return s.split('').reverse().join('');
-                    }
-                  }
-                }
-              </code>
-              <form name="form" ng-controller="Foo">
-                <p>
-                  <input type="text" ng-model="name"/>
-                </p>
-                <p>
-                  {{rev(name)}}
-                </p>
-              </form>
-            </script>
-            <script type="text/template" data-title="TODO">
-              <code>
-                function Foo($scope){
-                  $scope.tasks = [];
-                  $scope.addTask = function() {
-                    $scope.tasks.push($scope.newTask);
-                    $scope.newTask = null;
-                  };
-                  $scope.removeTask = function (index) {
-                    $scope.tasks.splice(index, 1);
-                  };
-                }
-              </code>
-              <form name="form" ng-controller="Foo">
-                <h2>{{tasks.length}} Tasks</h2>
-                <p>
-                  <input type="text" ng-model="newTask"/>
-                  <button ng-click="addTask()">Add</button>
-                </p>
-                <ul>
-                  <li ng-repeat="(index, task) in tasks">
-                    {{task}} <button ng-click="removeTask(index)">X</button>
-                  </li>
-                </ul>
-              </form>
-            </script>
-            <script type="text/template" data-title="Red Square">
-              X: <input type="text" ng-model="x">
-              <br>
-              Y: <input type="text" ng-model="y">
-
-              <div style="background-color: red; width: 20px; height: 20px; position: absolute; left: {{x}}; top: {{y}}"></div>
-                            
-            </script>
-          </live-example>
-				</section>
 
         <section>
           <h1>Dev</h1>
@@ -204,6 +150,17 @@
           <br>
           <h1>SI!</h1>
         </section>
+
+        <section>
+          <h2>Opcion avanzada</h2>
+          <p>Bulks de js cargados de forma asincrona</p>
+          <br>
+          <p>RequireJS</p>
+          <br>
+          <h1>SI!</h1>
+          <p>Pero no lo veremos en el curso </p>
+        </section>
+
 
         <section>
           <section>
